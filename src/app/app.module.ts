@@ -13,7 +13,8 @@ import { routes } from './app.routes'; // Importa tus rutas
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)  // Configura las rutas aquí
+    RouterModule.forRoot(routes),  
+
   ],
   providers: [],
   bootstrap: [AppComponent]

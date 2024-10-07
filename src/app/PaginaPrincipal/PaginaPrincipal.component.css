@@ -2,10 +2,9 @@
 .PaginaPrincipal-body {
     display: flex;
     flex-direction: column;
-    gap: 1em;
 
     .PaginaPrincipal-header {
-        border: 2px solid red;
+        border: 2px solid transparent;
         display: flex;
         flex-direction: row;
         gap: 53em;
@@ -51,10 +50,45 @@
     }
     
     .PaginaPrincipal-main {
-        border: 2px solid yellow;
+        border: 2px solid transparent;
+        height: 53.6vh;
     }
     
     .PaginaPrincipal-footer {
-        border: 2px solid orange;
+        border: 2px solid transparent;
+        background-color: #e3e3e3;
+        height: 30vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10em;
+
+        .footer-izquierdo{
+           height: 20vh;
+           width: 10vw; 
+           display: flex;
+           flex-direction: column;
+           gap: 1em;
+        
+           .iconos {
+            height: 3vh;
+            width: 3vw;
+           }
+        }
+
+        .footer-derecho {
+            flex-direction: row;
+            display: flex;
+            gap: 2em;
+
+            .footer-informacion {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                width: 20vw;
+                height: 20vh;
+            }
+        }
     }
 }
